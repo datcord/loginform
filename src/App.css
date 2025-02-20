@@ -24,7 +24,7 @@ form {
     background: rgba(255, 255, 255, 0.2);
   }
 }
-input {
+input, button {
   width: 80%;
   height: 30px;
   margin: 10px 0;
@@ -33,24 +33,11 @@ input {
   border: none;
   background-color: #242424;
 }
-input:hover {
+input:hover, button:hover {
   background-color: #333;
   transition: all 0.3s ease;
 }
 
 button {
-  width: 80%;
-  height: 30px;
-  margin: 10px 0;
-  padding: 5px;
-  border-radius: 10px;
-  border: none;
-  background-color: #242424;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #333;
-  transition: all 0.3s ease;
+  width: 30%;
 }/*# sourceMappingURL=App.css.map */
