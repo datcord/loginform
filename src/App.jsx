@@ -8,12 +8,13 @@ function App() {
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
+    alert(`Username: ${username}, Password: ${password}`);
     e.preventDefault();
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Login form</h1>
+      <h1>Login</h1>
       <h2>Username</h2>
       <input
         type="text"
@@ -30,6 +31,7 @@ function App() {
       />
       <br />
       <button type="submit">Login</button>
+      <h1>Register</h1>
     </form>
   );
 }
