@@ -1,8 +1,7 @@
 $rounded-corners: 10px;
 form {
   width: min(400px, 80vw);
-  height: 60vh;
-  height: 60dvh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +11,10 @@ form {
   border-radius: $rounded-corners;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 20px;
-  animation: background 5s infinite;
+  transition: all 0.3s ease;
+  &:focus-within {
+    animation: glitch 0.4s ease;
+  }
 }
 @keyframes background {
   0% {
@@ -31,6 +33,28 @@ form {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes glitch {
+  0% {
+    transform: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    transform: translate(-3px, 5px) scale(1.01);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: translate(3px, -5px) scale(1.03);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  75% {
+    transform: translate(-3px, 5px) scale(1.01);
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    transform: none;
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 h1 {
