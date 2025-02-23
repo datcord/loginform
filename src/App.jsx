@@ -16,9 +16,7 @@ function App() {
   const LoginForm = () => {
     return (
       <form
-        style={{
-          display: activeForm === "login" ? "flex" : "none",
-        }}
+        className={activeForm === "login" ? "active" : ""}
         onSubmit={handleSubmit}
       >
         <h1>Login Form</h1>
@@ -28,7 +26,7 @@ function App() {
         <input type="password" placeholder="Enter your password" />
         <br />
         <button type="submit">Login</button>
-        <h1 onClick={toggleForm}>Register</h1>
+        <h3 onClick={toggleForm}>Not yet a user? Sign up!!</h3>
       </form>
     );
   };
@@ -36,9 +34,7 @@ function App() {
   const SignupForm = () => {
     return (
       <form
-        style={{
-          display: activeForm === "register" ? "flex" : "none",
-        }}
+        className={activeForm === "register" ? "active" : ""}
         onSubmit={handleSubmit}
       >
         <h1>Sign up Form</h1>
@@ -59,7 +55,7 @@ function App() {
         />
         <br />
         <button type="submit">Register</button>
-        <h1 onClick={toggleForm}>Login</h1>
+        <h3 onClick={toggleForm}>Already a user? Login</h3>
       </form>
     );
   };
