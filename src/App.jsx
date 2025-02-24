@@ -21,9 +21,13 @@ function App() {
       >
         <h1>Login Form</h1>
         <h2>Username</h2>
-        <input type="text" placeholder="Enter your username" />
+        <input type="text" name="username" placeholder="Enter your username" />
         <h2>Password</h2>
-        <input type="password" placeholder="Enter your password" />
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
         <br />
         <button type="submit">Login</button>
         <div className="form-change">
