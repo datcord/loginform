@@ -26,7 +26,10 @@ function App() {
         <input type="password" placeholder="Enter your password" />
         <br />
         <button type="submit">Login</button>
-        <h3 onClick={toggleForm}>Not yet a user? Sign up!!</h3>
+        <div className="form-change">
+          <h3>Not yet a user?</h3>
+          <h3 onClick={toggleForm}>Sign up!</h3>
+        </div>
       </form>
     );
   };
@@ -55,7 +58,10 @@ function App() {
         />
         <br />
         <button type="submit">Register</button>
-        <h3 onClick={toggleForm}>Already a user? Login</h3>
+        <div className="form-change">
+          <h3>Already a user?</h3>
+          <h3 onClick={toggleForm}>Login!</h3>
+        </div>
       </form>
     );
   };

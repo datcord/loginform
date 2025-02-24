@@ -88,4 +88,18 @@ input:hover, button:hover {
 
 button {
   width: 30%;
+}
+
+.form-change {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.form-change :last-child {
+  text-decoration: underline;
+}
+.form-change :last-child:hover {
+  color: #dede8d;
 }/*# sourceMappingURL=App.css.map */

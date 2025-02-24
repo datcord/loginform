@@ -87,3 +87,16 @@ button {
   width: 30%;
   @extend input;
 }
+.form-change {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  :last-child {
+    text-decoration: underline;
+    &:hover {
+      color: darken($color: beige, $amount: 20%);
+    }
+  }
+}
