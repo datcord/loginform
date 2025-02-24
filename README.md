@@ -1,8 +1,12 @@
-# React + Vite
+# Login / Register Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a login / registration form created using SPSS and ReactJS to showcase 
+In this repository Vite is used.
+After installing, execute:
 
-Currently, two official plugins are available:
+`npm install`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`npm run dev`
+
+https://github.com/user-attachments/assets/84c037ff-4e96-4a45-bb20-c5be938f5839
+
