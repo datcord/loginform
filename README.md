@@ -1,6 +1,6 @@
 # Login / Register Form
 
-This is a login / registration form created using SPSS and ReactJS to showcase.
+This is a login / registration form created using SCSS and ReactJS to showcase.
 
 In this repository Vite is used.
 After installing, execute:
