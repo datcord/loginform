@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { act, useState } from "react";
 import "./App.css";
 
 function App() {
@@ -72,8 +72,7 @@ function App() {
 
   return (
     <div className="App">
-      <LoginForm />
-      <SignupForm />
+      {activeForm === "login" ? <LoginForm /> : <SignupForm />}
     </div>
   );
 }
