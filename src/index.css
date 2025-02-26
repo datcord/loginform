@@ -11,7 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: background 5s infinite;
+  background-image: url("./assets/back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @keyframes background {
   0% {

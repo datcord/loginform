@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -21,11 +21,17 @@ function App() {
       >
         <h1>Login Form</h1>
         <h2>Username</h2>
-        <input type="text" name="username" placeholder="Enter your username" />
+        <input
+          type="text"
+          name="username"
+          required={true}
+          placeholder="Enter your username"
+        />
         <h2>Password</h2>
         <input
           type="password"
           name="password"
+          required={true}
           placeholder="Enter your password"
         />
         <br />
@@ -46,11 +52,17 @@ function App() {
       >
         <h1>Sign up Form</h1>
         <h2>Username</h2>
-        <input type="text" name="username" placeholder="Enter your username" />
+        <input
+          type="text"
+          name="username"
+          required={true}
+          placeholder="Enter your username"
+        />
         <h2>Password</h2>
         <input
           type="password"
           name="password"
+          required={true}
           placeholder="Enter your password"
         />
         <br />
@@ -58,6 +70,7 @@ function App() {
         <input
           type="password"
           name="repeatPassword"
+          required={true}
           placeholder="Repeat your password"
         />
         <br />
