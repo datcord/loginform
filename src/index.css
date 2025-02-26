@@ -19,14 +19,14 @@
   25% {
     background: #242424;
     background-image: url("./assets/back.png");
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
   }
   50% {
     background: rgba(255, 255, 255, 0.4);
     background-image: url("./assets/backrev.png");
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -34,7 +34,7 @@
   100% {
     background: #242424;
     background-image: url("./assets/back.png");
-    background-size: cover;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
   }
