@@ -11,31 +11,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
   animation: background 10s infinite;
   transition: all 0.5s ease-in-out;
 }
 @keyframes background {
   0%,
   25% {
-    background: #242424;
     background-image: url("./assets/back.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   50% {
-    background: rgba(255, 255, 255, 0.4);
     background-image: url("./assets/backrev.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
   75%,
   100% {
-    background: #242424;
     background-image: url("./assets/back.png");
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }

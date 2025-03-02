@@ -16,10 +16,12 @@ form {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: transparent;
   backdrop-filter: blur(5px);
   border-radius: $rounded-corners;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 10px #000, 1px 1px 10px #000,
+    inset 2px 1px 5px rgba(0, 0, 0, 0.5),
+    inset -1px 1px 5px rgba(255, 255, 255, 0.2);
   padding: 20px;
   position: fixed;
   opacity: 0;
@@ -31,6 +33,9 @@ form {
     animation: showup 1s forwards;
     pointer-events: all;
     transition: all 0.5s ease-in-out;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
 @keyframes showup {
@@ -67,7 +72,9 @@ input {
   margin: 1px 0;
   padding: 5px;
   border-radius: calc($rounded-corners * 2);
-  box-shadow: 0px 2px 3px #000;
+  box-shadow: 0px 2px 3px #000, 1px 1px 3px #000,
+    inset 2px 1px 3px rgba(0, 0, 0, 0.5),
+    inset -1px 1px 3px rgba(255, 255, 255, 0.2);
   border: none;
   background-color: #242424;
   &:hover {
