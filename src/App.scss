@@ -34,9 +34,6 @@ form {
     pointer-events: all;
     transition: all 0.5s ease-in-out;
   }
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
 }
 @keyframes showup {
   from {
@@ -53,7 +50,7 @@ form {
 }
 
 h1 {
-  color: beige;
+  color: light-dark(#424242, beige);
   text-shadow: 0px 1px 1px #333;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -67,19 +64,21 @@ h3 {
   font-size: 1.2rem;
 }
 input {
+  color: beige;
   width: 80%;
   height: 40px;
   margin: 1px 0;
   padding: 5px;
   border-radius: calc($rounded-corners * 2);
-  box-shadow: 0px 2px 3px #000, 1px 1px 3px #000,
-    inset 2px 1px 3px rgba(0, 0, 0, 0.5),
-    inset -1px 1px 3px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 2px 1px 3px rgb(0, 0, 0), inset -1px 1px 3px rgb(0, 0, 0);
   border: none;
   background-color: #242424;
   &:hover {
     background-color: #333;
     transition: all 0.3s ease;
+  }
+  &:focus {
+    border: none;
   }
 }
 button {
@@ -95,7 +94,10 @@ button {
   :last-child {
     text-decoration: underline;
     &:hover {
-      color: darken($color: beige, $amount: 20%);
+      color: light-dark(
+        lighten($color: #424242, $amount: 20%),
+        darken($color: beige, $amount: 20%)
+      );
     }
   }
 }
